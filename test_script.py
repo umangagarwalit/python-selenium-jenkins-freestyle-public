@@ -10,8 +10,8 @@ url = "https://parabank.parasoft.com/parabank/index.htm"
 
 
 def test01():
-    #driver = webdriver.Chrome(executable_path=FILE_PATH)
-    driver = webdriver.Chrome(file_path)
+    driver = webdriver.Chrome(executable_path=file_path)
+    #driver = webdriver.Chrome(file_path)
     time.sleep(1)
     driver.get(url)
     time.sleep(1)
