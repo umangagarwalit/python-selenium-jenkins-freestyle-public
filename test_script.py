@@ -3,6 +3,7 @@ import pytest
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
 
 file_path = os.path.join(os.getcwd(), "drivers", "chromedriver.exe")
 #file_path = "\\drivers\\chromedriver.exe"
@@ -10,8 +11,8 @@ url = "https://parabank.parasoft.com/parabank/index.htm"
 
 
 def test01():
-    driver = webdriver.Chrome(executable_path=file_path)
-    #driver = webdriver.Chrome(file_path)
+    service = Service(file_path)
+    driver = webdriver.Chrome(service=service)
     time.sleep(1)
     driver.get(url)
     time.sleep(1)
