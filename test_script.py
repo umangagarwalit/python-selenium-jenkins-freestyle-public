@@ -4,8 +4,8 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-#FILE_PATH = os.path.join(os.getcwd(), "drivers", "chromedriver.exe")
-file_path = "\\drivers\\chromedriver.exe"
+file_path = os.path.join(os.getcwd(), "drivers", "chromedriver.exe")
+#file_path = "\\drivers\\chromedriver.exe"
 url = "https://parabank.parasoft.com/parabank/index.htm"
 
 
